@@ -14,6 +14,9 @@
 		B0A92ADD2293321100374CF0 /* FaresTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A92ADC2293321100374CF0 /* FaresTests.swift */; };
 		B0A92AEC2293330B00374CF0 /* fares-response.json in Resources */ = {isa = PBXBuildFile; fileRef = B0A92AEB2293330B00374CF0 /* fares-response.json */; };
 		B0A92AEE2293334D00374CF0 /* Fares.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A92AED2293334D00374CF0 /* Fares.swift */; };
+		B0A92AF32293476100374CF0 /* RiderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A92AF22293476100374CF0 /* RiderViewController.swift */; };
+		B0A92AF5229347A800374CF0 /* ModelConfigurable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A92AF4229347A800374CF0 /* ModelConfigurable.swift */; };
+		B0A92AF722934A1400374CF0 /* RiderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A92AF622934A1400374CF0 /* RiderCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +41,9 @@
 		B0A92ADE2293321100374CF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B0A92AEB2293330B00374CF0 /* fares-response.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "fares-response.json"; sourceTree = "<group>"; };
 		B0A92AED2293334D00374CF0 /* Fares.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fares.swift; sourceTree = "<group>"; };
+		B0A92AF22293476100374CF0 /* RiderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RiderViewController.swift; sourceTree = "<group>"; };
+		B0A92AF4229347A800374CF0 /* ModelConfigurable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelConfigurable.swift; sourceTree = "<group>"; };
+		B0A92AF622934A1400374CF0 /* RiderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RiderCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,8 +86,11 @@
 			isa = PBXGroup;
 			children = (
 				B0A92AE8229332AF00374CF0 /* Bootstrap */,
+				B0A92AF02293472900374CF0 /* Fare View Controller */,
 				B0A92AE72293329E00374CF0 /* Model */,
+				B0A92AF12293473100374CF0 /* Purchase View Controller */,
 				B0A92AE9229332CF00374CF0 /* Resources */,
+				B0A92AEF2293471A00374CF0 /* Rider View Controller */,
 				B0A92AEA229332DF00374CF0 /* Shared */,
 			);
 			path = "Simple Mobile Ticketing Task";
@@ -127,8 +136,32 @@
 			isa = PBXGroup;
 			children = (
 				B0A92ACB2293321000374CF0 /* Main.storyboard */,
+				B0A92AF4229347A800374CF0 /* ModelConfigurable.swift */,
 			);
 			path = Shared;
+			sourceTree = "<group>";
+		};
+		B0A92AEF2293471A00374CF0 /* Rider View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B0A92AF22293476100374CF0 /* RiderViewController.swift */,
+				B0A92AF622934A1400374CF0 /* RiderCell.swift */,
+			);
+			path = "Rider View Controller";
+			sourceTree = "<group>";
+		};
+		B0A92AF02293472900374CF0 /* Fare View Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Fare View Controller";
+			sourceTree = "<group>";
+		};
+		B0A92AF12293473100374CF0 /* Purchase View Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Purchase View Controller";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,7 +266,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0A92AF5229347A800374CF0 /* ModelConfigurable.swift in Sources */,
+				B0A92AF722934A1400374CF0 /* RiderCell.swift in Sources */,
 				B0A92AC82293321000374CF0 /* AppDelegate.swift in Sources */,
+				B0A92AF32293476100374CF0 /* RiderViewController.swift in Sources */,
 				B0A92AEE2293334D00374CF0 /* Fares.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
