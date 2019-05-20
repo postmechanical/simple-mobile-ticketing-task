@@ -19,7 +19,12 @@ class RiderViewController: UITableViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // TODO: handle setup of `FaresViewController`
+        guard
+            segue.identifier == "showFares",
+            let vc = segue.destination as? FareViewController,
+            let riderFares = sender as? RiderFares
+            else { return }
+        vc.riderFares = riderFares
     }
 
     // MARK: Table view data source & delegate

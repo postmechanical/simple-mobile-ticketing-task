@@ -17,6 +17,9 @@
 		B0A92AF32293476100374CF0 /* RiderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A92AF22293476100374CF0 /* RiderViewController.swift */; };
 		B0A92AF5229347A800374CF0 /* ModelConfigurable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A92AF4229347A800374CF0 /* ModelConfigurable.swift */; };
 		B0A92AF722934A1400374CF0 /* RiderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A92AF622934A1400374CF0 /* RiderCell.swift */; };
+		B0A92AF922934CCA00374CF0 /* FareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A92AF822934CCA00374CF0 /* FareViewController.swift */; };
+		B0A92AFB22934CDB00374CF0 /* FareCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A92AFA22934CDB00374CF0 /* FareCell.swift */; };
+		B0A92AFD22934D7C00374CF0 /* NumberFormatter+Fare.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A92AFC22934D7C00374CF0 /* NumberFormatter+Fare.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +47,9 @@
 		B0A92AF22293476100374CF0 /* RiderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RiderViewController.swift; sourceTree = "<group>"; };
 		B0A92AF4229347A800374CF0 /* ModelConfigurable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelConfigurable.swift; sourceTree = "<group>"; };
 		B0A92AF622934A1400374CF0 /* RiderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RiderCell.swift; sourceTree = "<group>"; };
+		B0A92AF822934CCA00374CF0 /* FareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FareViewController.swift; sourceTree = "<group>"; };
+		B0A92AFA22934CDB00374CF0 /* FareCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FareCell.swift; sourceTree = "<group>"; };
+		B0A92AFC22934D7C00374CF0 /* NumberFormatter+Fare.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NumberFormatter+Fare.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +159,9 @@
 		B0A92AF02293472900374CF0 /* Fare View Controller */ = {
 			isa = PBXGroup;
 			children = (
+				B0A92AFA22934CDB00374CF0 /* FareCell.swift */,
+				B0A92AF822934CCA00374CF0 /* FareViewController.swift */,
+				B0A92AFC22934D7C00374CF0 /* NumberFormatter+Fare.swift */,
 			);
 			path = "Fare View Controller";
 			sourceTree = "<group>";
@@ -268,8 +277,11 @@
 			files = (
 				B0A92AF5229347A800374CF0 /* ModelConfigurable.swift in Sources */,
 				B0A92AF722934A1400374CF0 /* RiderCell.swift in Sources */,
+				B0A92AFB22934CDB00374CF0 /* FareCell.swift in Sources */,
+				B0A92AFD22934D7C00374CF0 /* NumberFormatter+Fare.swift in Sources */,
 				B0A92AC82293321000374CF0 /* AppDelegate.swift in Sources */,
 				B0A92AF32293476100374CF0 /* RiderViewController.swift in Sources */,
+				B0A92AF922934CCA00374CF0 /* FareViewController.swift in Sources */,
 				B0A92AEE2293334D00374CF0 /* Fares.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
