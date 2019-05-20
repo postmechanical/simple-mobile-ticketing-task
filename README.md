@@ -1,2 +1,1 @@
-# -
-Simple Mobile Ticketing 
+# Simple Mobile Ticketing Task
