@@ -54,6 +54,7 @@
 		B0A92AFC22934D7C00374CF0 /* NumberFormatter+Fare.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NumberFormatter+Fare.swift"; sourceTree = "<group>"; };
 		B0A92AFE2293501600374CF0 /* PurchaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseViewController.swift; sourceTree = "<group>"; };
 		B0A92B002293506600374CF0 /* Purchase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Purchase.swift; sourceTree = "<group>"; };
+		B0A92B022293590F00374CF0 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +96,7 @@
 		B0A92AC62293321000374CF0 /* Simple Mobile Ticketing Task */ = {
 			isa = PBXGroup;
 			children = (
+				B0A92B022293590F00374CF0 /* README.md */,
 				B0A92AE8229332AF00374CF0 /* Bootstrap */,
 				B0A92AF02293472900374CF0 /* Fare View Controller */,
 				B0A92AE72293329E00374CF0 /* Model */,
