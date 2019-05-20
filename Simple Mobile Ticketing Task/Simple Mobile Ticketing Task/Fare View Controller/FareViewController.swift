@@ -21,7 +21,12 @@ class FareViewController: UITableViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // TODO: handle setup of `PurchaseViewController`
+        guard
+            segue.identifier == "showPurchase",
+            let vc = segue.destination as? PurchaseViewController,
+            let model = sender as? Purchase
+            else { return }
+        vc.configure(with: model)
     }
 
     // MARK: Table view data source & delegate
@@ -47,7 +52,8 @@ class FareViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         guard indexPath.row < riderFares.fares.count else { return }
-        performSegue(withIdentifier: "showPurchase", sender: riderFares.fares[indexPath.row])
+        let purchaseModel = Purchase(title: riderFares.title, fare: riderFares.fares[indexPath.row])
+        performSegue(withIdentifier: "showPurchase", sender: purchaseModel)
     }
 
 }

@@ -109,18 +109,87 @@
         <!--Confirm Selection-->
         <scene sceneID="khZ-pN-kQW">
             <objects>
-                <viewController id="SmW-lQ-r5Q" sceneMemberID="viewController">
+                <viewController id="SmW-lQ-r5Q" customClass="PurchaseViewController" customModule="Simple_Mobile_Ticketing_Task" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="iYf-ju-rld">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E8e-Az-Yaa">
+                                <rect key="frame" x="20" y="108" width="44.5" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LCo-fb-dIh">
+                                <rect key="frame" x="20" y="137" width="44.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minimumValue="1" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="vSg-aR-4JG">
+                                <rect key="frame" x="300" y="137" width="94" height="29"/>
+                                <connections>
+                                    <action selector="stepperValueChanged:" destination="SmW-lQ-r5Q" eventType="valueChanged" id="MH5-xw-JsZ"/>
+                                </connections>
+                            </stepper>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BgN-ud-Xkd">
+                                <rect key="frame" x="326" y="108" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PrU-eN-eGB">
+                                <rect key="frame" x="20" y="832" width="374" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="purchase:" destination="SmW-lQ-r5Q" eventType="touchUpInside" id="FNY-qT-VJI"/>
+                                </connections>
+                            </button>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🎉🎟" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="syi-k0-cNh">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="vSg-aR-4JG" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="LCo-fb-dIh" secondAttribute="trailing" constant="8" id="0MK-vb-nBZ"/>
+                            <constraint firstItem="E8e-Az-Yaa" firstAttribute="width" secondItem="LCo-fb-dIh" secondAttribute="width" id="4uG-1R-AoX"/>
+                            <constraint firstItem="DMK-Hc-s2S" firstAttribute="bottom" secondItem="PrU-eN-eGB" secondAttribute="bottom" id="53c-PN-wAO"/>
+                            <constraint firstItem="E8e-Az-Yaa" firstAttribute="top" secondItem="DMK-Hc-s2S" secondAttribute="top" constant="20" id="6HX-2I-GZO"/>
+                            <constraint firstItem="BgN-ud-Xkd" firstAttribute="centerX" secondItem="vSg-aR-4JG" secondAttribute="centerX" id="6Ir-c6-HqI"/>
+                            <constraint firstItem="BgN-ud-Xkd" firstAttribute="top" secondItem="DMK-Hc-s2S" secondAttribute="top" constant="20" id="8KH-FL-3yz"/>
+                            <constraint firstItem="vSg-aR-4JG" firstAttribute="firstBaseline" secondItem="BgN-ud-Xkd" secondAttribute="baseline" constant="12.5" symbolType="layoutAnchor" id="Ca0-fT-6pa"/>
+                            <constraint firstItem="DMK-Hc-s2S" firstAttribute="trailing" secondItem="PrU-eN-eGB" secondAttribute="trailing" constant="20" id="IGH-Qc-O1W"/>
+                            <constraint firstItem="LCo-fb-dIh" firstAttribute="leading" secondItem="DMK-Hc-s2S" secondAttribute="leading" constant="20" id="Ixp-WT-rMW"/>
+                            <constraint firstItem="syi-k0-cNh" firstAttribute="leading" secondItem="DMK-Hc-s2S" secondAttribute="leading" id="MlF-dt-a6E"/>
+                            <constraint firstItem="LCo-fb-dIh" firstAttribute="top" secondItem="E8e-Az-Yaa" secondAttribute="bottom" constant="8" id="NvH-cA-Gbe"/>
+                            <constraint firstItem="E8e-Az-Yaa" firstAttribute="leading" secondItem="DMK-Hc-s2S" secondAttribute="leading" constant="20" id="O5s-01-I7f"/>
+                            <constraint firstItem="PrU-eN-eGB" firstAttribute="leading" secondItem="DMK-Hc-s2S" secondAttribute="leading" constant="20" id="PGg-VN-qCj"/>
+                            <constraint firstItem="syi-k0-cNh" firstAttribute="bottom" secondItem="DMK-Hc-s2S" secondAttribute="bottom" id="aNw-VQ-Gie"/>
+                            <constraint firstItem="PrU-eN-eGB" firstAttribute="centerX" secondItem="DMK-Hc-s2S" secondAttribute="centerX" id="c2V-5h-ndl"/>
+                            <constraint firstItem="DMK-Hc-s2S" firstAttribute="trailing" secondItem="vSg-aR-4JG" secondAttribute="trailing" constant="20" id="cly-mp-Wv1"/>
+                            <constraint firstItem="syi-k0-cNh" firstAttribute="trailing" secondItem="DMK-Hc-s2S" secondAttribute="trailing" id="q2B-14-Umd"/>
+                            <constraint firstItem="syi-k0-cNh" firstAttribute="top" secondItem="DMK-Hc-s2S" secondAttribute="top" id="wAw-Zv-jQt"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="DMK-Hc-s2S"/>
                     </view>
                     <navigationItem key="navigationItem" title="Confirm Selection" id="lSI-iv-6le"/>
+                    <connections>
+                        <outlet property="countLabel" destination="BgN-ud-Xkd" id="RUA-Vq-mdh"/>
+                        <outlet property="purchaseButton" destination="PrU-eN-eGB" id="bV6-ag-i0Z"/>
+                        <outlet property="statusLabel" destination="syi-k0-cNh" id="X51-TN-Xto"/>
+                        <outlet property="stepper" destination="vSg-aR-4JG" id="Fc7-nC-j6s"/>
+                        <outlet property="subtitleLabel" destination="LCo-fb-dIh" id="DfC-Jt-zZu"/>
+                        <outlet property="titleLabel" destination="E8e-Az-Yaa" id="DP3-LS-dFF"/>
+                        <outlet property="view" destination="iYf-ju-rld" id="Wkn-O4-PsT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lgc-lw-Fvk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1286" y="-101"/>
+            <point key="canvasLocation" x="1285.5072463768117" y="-101.11607142857143"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="I5l-i0-7M3">
